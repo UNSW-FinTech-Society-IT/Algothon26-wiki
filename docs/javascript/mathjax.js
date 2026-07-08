@@ -1,7 +1,7 @@
 window.MathJax = {
   tex: {
     inlineMath: [["\\(", "\\)"]],
-    displayMath: [["\\[", "\\]"]],
+    displayMath: [["\\[", "\\]"], ["$$", "$$"]],
     processEscapes: true,
     processEnvironments: true
   },
@@ -11,8 +11,15 @@ window.MathJax = {
   }
 };
 
-document$.subscribe(() => {
+function renderMathJax() {
   if (window.MathJax && window.MathJax.typesetPromise) {
+    window.MathJax.typesetClear();
     window.MathJax.typesetPromise();
   }
-});
+}
+
+if (typeof document$ !== "undefined") {
+  document$.subscribe(function () {
+    setTimeout(renderMathJax, 100);
+  });
+}
