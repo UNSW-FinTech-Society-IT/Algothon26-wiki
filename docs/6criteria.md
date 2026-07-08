@@ -6,15 +6,21 @@ Your algorithms will be assessed based on the quality of **overall performance**
 
 The formula used will be:
 
-**Score = μ × SR² / (SR² + 1), if μ ≥ 0**
+$$
+\text{Score} =
+\begin{cases}
+\mu \cdot \dfrac{\mathrm{SR}^{2}}{\mathrm{SR}^{2}+1}, & \mu \ge 0 \\
+\mu, & \mu < 0
+\end{cases}
+$$
 
-**Score = μ, if μ < 0**
+where
 
-where:
-
-**μ = Mean(PL)**  
-**σ = StdDev(PL)**  
-**SR = √250 × (μ / σ)**
+$$
+\mu = \mathrm{Mean}(PL), \quad
+\sigma = \mathrm{StdDev}(PL), \quad
+\mathrm{SR} = \sqrt{250} \times \left(\dfrac{\mu}{\sigma}\right)
+$$
 
 The algorithm will be evaluated on the basis of what we believe is achievable with the given dataset.
 
