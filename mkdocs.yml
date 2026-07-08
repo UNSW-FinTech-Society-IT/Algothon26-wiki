@@ -7,6 +7,7 @@ theme:
     - navigation.top
     - toc.integrate
     - navigation.tabs
+    - navigation.instant
 
   icon:
     repo: fontawesome/brands/github
