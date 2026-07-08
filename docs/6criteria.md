@@ -6,7 +6,15 @@ Your algorithms will be assessed based on the quality of **overall performance**
 
 The formula used will be:
 
-**mean(PL) - 0.1 * StdDev(PL)**
+**Score = μ × SR² / (SR² + 1), if μ ≥ 0**
+
+**Score = μ, if μ < 0**
+
+where:
+
+**μ = Mean(PL)**  
+**σ = StdDev(PL)**  
+**SR = √250 × (μ / σ)**
 
 The algorithm will be evaluated on the basis of what we believe is achievable with the given dataset.
 
