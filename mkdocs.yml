@@ -1,26 +1,45 @@
-site_name: Algothon 2026
+site_name: Algothon 2026 Documentation
 site_url: https://wiki.algothon.au/
 repo_url: https://github.com/UNSW-FinTech-Society-IT/algothon26-starter-code
 repo_name: Algothon 2026 Starter Code
+
+nav:
+  - Welcome: index.md
+  - Getting Started: getting-started.md
+  - Timeline: schedule.md
+  - Challenge Brief: rules.md
+  - Scoring & Evaluation: evaluation.md
+  - Submission Guide: submission.md
+  - Resources: resources.md
 
 theme:
   name: material
   logo: img/fintech.png
   favicon: img/fintech.png
+  icon:
+    repo: fontawesome/brands/github
   palette:
     primary: black
   features:
-    - navigation.top
-    - toc.integrate
     - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - toc.integrate
 
-  icon:
-    repo: fontawesome/brands/github
+plugins:
+  - search:
+      lang: en
 
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+      inline_syntax: ['round']
+      block_syntax: ['square', 'begin']
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 extra_javascript:
   - javascripts/mathjax.js
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js

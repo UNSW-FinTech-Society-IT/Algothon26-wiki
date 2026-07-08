@@ -17,3 +17,7 @@ You can access the Facebook event [here](https://www.facebook.com/events/s/susqu
 -->
 
 You can access the website [here](https://www.algothon.au/).
+
+## Need Help?
+* **Team Requirements:** The hackathon is open to all university students. You must compete in teams of **2 to 4 people**.
+* **Contact Us:** For any questions leading up to or throughout the duration of the competition, post in the questions forum on our Discord so moderators can answer you there.
