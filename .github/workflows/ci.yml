@@ -27,7 +27,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin https://${GH_TOKEN}@github.com/UNSW-FinTech-Society-IT/Algothon25-wiki.git
+          git remote set-url origin https://${GH_TOKEN}@github.com/UNSW-FinTech-Society-IT/Algothon26-wiki.git
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
