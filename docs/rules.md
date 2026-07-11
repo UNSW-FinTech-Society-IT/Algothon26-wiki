@@ -6,7 +6,7 @@ Your objective is to develop a quantitative trading strategy that maximizes risk
 You are tasked with trading a universe of **51 distinct assets** over a sequence of days. 
 
 * **Asset 0:** Ticker symbol `ALGO`.
-* **Assets 1 through 50:** Anonymized financial instruments.
+* **Assets 1 through 50:** Synthetic financial instruments with randomised tickers.
 
 Assets receive one price update per day. Your algorithm will process this price history and execute buy or sell orders to adjust your portfolio. You are permitted to take both positive (long) and negative (short) positions.
 
