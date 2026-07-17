@@ -43,5 +43,12 @@ The evaluation utilizes a total of **2,000 days** of simulated price data, relea
 | Date | Stage | You receive locally | Leaderboard/scoring window | Window size |
 | :--- | :--- | :--- | :--- | :--- |
 | **July 8** | Testing Round starts | Days 1–500 | Days 501–750 (hidden) | 250 days |
+| **July 16** | General Round starts | Days 1–750 | Days 751–800 (hidden), widening by 50 days every day after | 50 days, growing |
+| **~July 20** | Window finishes widening | Days 1–750 | Days 751–1000 (hidden, fixed for the rest of the round) | 250 days |
+| **~July 23** (one week before General Round closes) | Full dataset released | Days 1–1000 | Days 751–1000 (unchanged) | 250 days |
 
-The exact release structure for the General Round and Finals - including how much data is released at each step and how the leaderboard window moves - is still being finalised. **This section will be updated once that's confirmed**, ahead of the General Round starting. In broad terms: expect further stages to release progressively more historical data while continuing to score you on days you haven't seen yet, working toward the full 2,000-day dataset by the end of Finals.
+**How the daily window growth affects your score:** each day the hidden window widens, your team's *currently active* algorithm (whichever submission is your current best) is automatically re-run against the new, wider range - you don't need to resubmit for this to happen. Only your active algorithm rides along automatically, though. If you're comparing several different strategies, an idea that isn't currently your active one only ever has a score from the (narrower) range that was live when you submitted it - it won't get re-evaluated on a wider range unless you resubmit it, which uses that day's submission limit.
+
+This only matters during the few days the window is actively widening. Once it reaches the full 751-1000 range, it stays fixed for the remainder of the General Round, so every submission from that point on is compared on the exact same 250-day range.
+
+The full 2,000-day dataset is released in stages across Finals the same way - further details will be confirmed closer to the Finalist Round.
